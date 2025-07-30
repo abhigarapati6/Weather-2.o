@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "./app.css"
+import "./App.css"
 
 function Weather() {
   const [weather, setWeather] = useState("")
@@ -17,6 +17,7 @@ function Weather() {
       setWeather(response)
     } else {
       setWeather("")
+
       setdatafound("No city Found")
     }
   }
